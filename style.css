@@ -19,6 +19,28 @@ header {
     z-index: 100;
 }
 
+nav {
+    display: flex; /* Ativa o flexbox para alinhar o form */
+    justify-content: center; /* Centraliza o formulário na barra de navegação */
+    padding: 8px;
+}
+
+#form-busca {
+    display: flex; /* Ativa o flexbox para alinhar label, input e botão em linha */
+    align-items: center;
+    gap: 8px; /* Cria o espaçamento de 8px entre os elementos internos */
+}
+
+button {
+   background-color: rgb(215, 117, 228);
+   color: aliceblue;
+   border-radius: 5px;
+   border: none; /* Remove a borda padrão feia do botão */
+   width: 70px;
+   height: 25px;
+   cursor: pointer; /* Faz o cursor virar a "mãozinha" ao passar o mouse */
+}
+
 @media (max-width: 600px) {
 
     header {
@@ -522,7 +544,166 @@ header {
     border-radius: 8px;
 }
 
+
+/* ==========================================
+   SEÇÃO DOS BUSCADORES
+   ========================================== */
+
+.titulo-buscadores {
+    text-align: center;
+    margin: 40px 0 20px;
+    padding: 0 15px;
+}
+
+.titulo-buscadores h2 {
+    font-size: 2rem;
+    color: #a855f7;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+
+    text-shadow: 0 2px 10px rgba(168, 85, 247, 0.15);
+}
+
+
+.buscadores {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+
+/* ==========================================
+   CADA BUSCADOR
+   ========================================== */
+
+.buscador-titulo {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
+.buscador-titulo h2 {
+    color: #1e293b;
+
+    margin-bottom: 5px;
+}
+
+
+/* ==========================================
+   NOME DO BUSCADOR
+   ========================================== */
+
+.buscador-titulo p {
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+.buscadores img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* ==========================================
+   BOTÃO
+   ========================================== */
+
+.buscador-titulo a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+
+    gap: 6px;
+
+    background: linear-gradient(
+        135deg,
+        #a855f7,
+        #ec4899
+    );
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    font-size: 0.9rem;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 4px 12px rgba(168, 85, 247, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ==========================================
+   HOVER
+   ========================================== */
+
+.buscador-titulo a:hover {
+    transform: translateY(-2px) scale(1.05);
+
+    box-shadow:
+        0 6px 18px rgba(168, 85, 247, 0.4);
+}
+
+
+/* ==========================================
+   CELULAR
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    @media (max-width: 600px) {
+    .buscadores {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    .buscadores img {
+        width: 100%;
+        max-width: 400px;
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
 /* ==================== SEÇÃO ACHADINHOS ==================== */
+
+.achadinhos {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* ==========================================
+   CONTEÚDO
+   ========================================== */
 
 .achadinhos-titulo {
     display: flex;
@@ -537,15 +718,75 @@ header {
     padding: 20px;
 }
 
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
 .achadinhos-titulo h2 {
     color: #1e293b;
+
     margin-bottom: 5px;
 }
 
+
+/* ==========================================
+   TEXTO
+   ========================================== */
+
 .achadinhos-titulo p {
     color: #64748b;
-    margin-bottom: 15px;
+
+    margin-bottom: 20px;
 }
+
+
+/* ==========================================
+   IMAGENS
+   ========================================== */
+
+.achadinhos-imagens {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+
+.achadinhos-imagens img {
+    width: 220px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.achadinhos-imagens img:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow:
+        0 10px 25px rgba(168, 85, 247, 0.25);
+}
+
+
+/* ==========================================
+   BOTÃO
+   ========================================== */
 
 .achadinhos-titulo a {
     display: inline-flex;
@@ -555,7 +796,11 @@ header {
 
     gap: 6px;
 
-    background: linear-gradient(135deg, #a855f7, #ec4899);
+    background: linear-gradient(
+        135deg,
+        #a855f7,
+        #ec4899
+    );
 
     color: #ffffff;
 
@@ -569,18 +814,40 @@ header {
 
     text-decoration: none;
 
-    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25);
+    box-shadow:
+        0 4px 12px rgba(168, 85, 247, 0.25);
 
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
 
+
 .achadinhos-titulo a:hover {
     transform: translateY(-2px) scale(1.05);
 
-    box-shadow: 0 6px 18px rgba(168, 85, 247, 0.4);
+    box-shadow:
+        0 6px 18px rgba(168, 85, 247, 0.4);
 }
+
+
+/* ==========================================
+   CELULAR
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .achadinhos-imagens {
+        gap: 12px;
+    }
+
+    .achadinhos-imagens img {
+        width: 145px;
+        height: 190px;
+    }
+
+}
+
 
 /* ============================================== */
 /* 8. RODAPÉ                                      */
