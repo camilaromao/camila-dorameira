@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+
+    <link rel="stylesheet" href="globals-cdrama.css">
+    <link rel="stylesheet" href="style-cdrama.css">
+
+    <title>Search Cdrama</title>
+</head>
+
+<body>
+
+    <main class="card-vidro">
+
+        <span class="marca-dev">By Camila Romão</span>
+
+        <div class="cabecalho-pesquisa">
+            <h2>Qual o tipo de drama que mais gosta de assistir?</h2>
+
+            <h1>SEARCH CDRAMA</h1>
+        </div>
+
+        <form id="form-busca">
+
+            <input
+                type="text"
+                id="campo-busca"
+                placeholder="Digite um tipo de dorama (ex: romance, comédia)..."
+                required
+            >
+
+            <button type="submit" class="botao-procura">
+                PROCURAR CDRAMA
+            </button>
+
+        </form>
+
+
+        <!-- ==========================================
+             ÁREA DOS RESULTADOS
+             ========================================== -->
+
+        <section id="area-resultado" class="escondido"></section>
+
+
+        <footer class="streamings">
+            NETFLIX + VIKI + APPLETV + PRIME VIDEO + IQIYI
+        </footer>
+
+    </main>
+
+
+    <script src="script-cdrama.js"></script>
+
+</body>
+</html>
