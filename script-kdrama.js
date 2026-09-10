@@ -564,7 +564,7 @@ const doramas = [
         plataforma: "Netflix",
     } ,
 
-    {
+     {
         titulo: "100 days my prince",
 
         genero: "Comedia, drama, misterio, romance",
