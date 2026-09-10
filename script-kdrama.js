@@ -569,7 +569,7 @@ const doramas = [
 
         genero: "Comedia, drama, misterio, romance",
 
-        imagem: "search-kdrama/assets-kdrama/100-days-my-prince.jpg",
+        imagem: "assets-kdrama/100-days-my-prince.jpg",
 
         sinopse: "Uma jovem moça precisa se casar o mais rapido possivel, se nçao sofrera duras punições. Mas para sorte dela um jovem que perdeu a memoria sera sua possivel salvação.  Num casamento de faz de conta, cenas divertidas e dramaticas. Em busca de descobrir qual a sua verdadeira identidade.",
 
@@ -581,7 +581,7 @@ const doramas = [
 
         genero: "Comedia, drama, misterio, romance",
 
-        imagem: "search-kdrama/assets-kdrama/hello-my-twenties.jpg",
+        imagem: "assets-kdrama/hello-my-twenties.jpg",
 
         sinopse: "Cinco adoraveis amigas, divertidas e maluquinhas dividem um ap, enquanto se metem altas confusões. Todas na casa dos 20 anos, universitarias, sonhando com o diploma e a carreira de sucesso. Vivendo paixões e nos divertindo assistindo..",
 
