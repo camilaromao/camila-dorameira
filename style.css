@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* ================================
+   TELA DE ABERTURA RESPONSIVA
+================================ */
+
 #preloader {
     position: fixed;
     inset: 0;

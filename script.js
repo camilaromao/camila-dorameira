@@ -1,3 +1,6 @@
+
+// ANIMAÇÃO DE PETALAS //
+
 function createPetal() {
   const container = document.getElementById('sakura-container');
   if (!container) return;
@@ -33,8 +36,7 @@ function createPetal() {
 setInterval(createPetal, 300);
 
 
-
-/ BANNER ANIMADO DE ABERTURA // 
+// BANNER ANIMADO DE ABERTURA // 
 
 window.addEventListener("load", () => {
 
