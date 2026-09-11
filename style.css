@@ -4,6 +4,45 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+#preloader {
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100dvh;
+
+    overflow: hidden;
+
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#animacao-abertura {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+/* Quando o vídeo terminar */
+#preloader.escondido {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
 /* ============================================== */
 /* 2. CABEÇALHO E NAVEGAÇÃO                       */
 /* ============================================== */
