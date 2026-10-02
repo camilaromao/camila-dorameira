@@ -588,6 +588,20 @@ const doramas = [
         plataforma: "Netflix, Viki e Prime video",
     } ,
 
+     {
+        titulo: "A justiceira",
+
+        genero: "Terror, comedia, misterio, crime",
+
+        imagem: "assets-kdrama/a-justiceira.jpg",
+
+        sinopse: "Uma otima esposa e mãe, que ninguém imagina ter uma vida dupla. Ela é uma justiceira que caça criminosos, que a justiça não puni da forma correta. So que seus dias de caçadora podem esta por um fio, pois seu marido parece ja desconfiar que esconde algo.",
+
+        plataforma: "Viki e Kocowa",
+    } ,
+
+    
+
 ];
 
 
