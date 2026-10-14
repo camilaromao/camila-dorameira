@@ -11,68 +11,6 @@ const resultados = document.querySelector("#area-resultado");
 
 const doramas = [
 
-     {
-        titulo: "Lutando pelo meu caminho",
-
-        genero: "Drama, comedia, esporte, romance",
-
-        imagem: "assets-kdrama/lutando-pelo-meu-caminho.jpg",
-
-        sinopse: "Um ex-lutador de taekwondo tenta voltar aos ringues após anos afastado. E uma jovem que sonha em trabalhar como âncora no telejornal vai conseguir um trampo onde menos imagina. Com muito esforço e determinação, esses dois e seus amigos conquistaram seus sonhos em meio a muitas cenas hilarias e divertidas.",
-
-        plataforma: "Viki e Netflix",
-    } ,
-
-      {
-        titulo: "100 dias de mentiras",
-
-        genero: "Drama, Terror, historico, romance",
-
-        imagem: "assets-kdrama/100-dias-de-mentiras.jpg",
-
-        sinopse: "Uma famosa batedora de carteiras ganhará a oportunidade de trabalhar para um famoso intérprete coreano, tendo, assim, a possibilidade de largar a vida errada em meio a muitos mistérios e segredos. Gostou de Mr. Sunshine? Vai gostar deste drama!",
-
-        plataforma: "Netflix",
-    } ,
-
-
-        {
-        titulo: "Doutora X e a mafia do jaleco branco",
-
-        genero: "Drama, Terror, medico, misterio",
-
-        imagem: "assets-kdrama/doutora-x-mafia-do-jaleco-branco.jpg",
-
-        sinopse: "Uma funcionária freelancer chega a um hospital onde só existem médicos corruptos, que só querem status e glória. Ela vai ensinar a esses médicos o verdadeiro significado da profissão. Muito famosa, esperta e talentosa, coloca em prática suas habilidades e seus conhecimentos em procedimentos cirúrgicos, salvando seus pacientes e irritando parte dos médicos.",
-
-        plataforma: "Netflix",
-    } ,
-
-  {
-        titulo: "A justiceira",
-
-        genero: "Terror, comedia, misterio, crime",
-
-        imagem: "assets-kdrama/a-justiceira.jpg",
-
-        sinopse: "Uma otima esposa e mãe, que ninguém imagina ter uma vida dupla. Ela é uma justiceira que caça criminosos, que a justiça não puni da forma correta. So que seus dias de caçadora podem esta por um fio, pois seu marido parece ja desconfiar que esconde algo.",
-
-        plataforma: "Viki e Kocowa",
-    } ,
-
-      {
-        titulo: "Hello my twenties",
-
-        genero: "Comedia, drama, misterio, romance",
-
-        imagem: "assets-kdrama/hello-my-twenties.jpg",
-
-        sinopse: "Cinco adoraveis amigas, divertidas e maluquinhas dividem um ap, enquanto se metem altas confusões. Todas na casa dos 20 anos, universitarias, sonhando com o diploma e a carreira de sucesso. Vivendo paixões e nos divertindo assistindo..",
-
-        plataforma: "Netflix, Viki e Prime video",
-    } ,
-    
-
     {
         titulo: "Meu Mafioso Predileto",
 
@@ -637,8 +575,68 @@ const doramas = [
 
         plataforma: "Netflix e Viki",
     } ,
-    
 
+    {
+        titulo: "Hello my twenties",
+
+        genero: "Comedia, drama, misterio, romance",
+
+        imagem: "assets-kdrama/hello-my-twenties.jpg",
+
+        sinopse: "Cinco adoraveis amigas, divertidas e maluquinhas dividem um ap, enquanto se metem altas confusões. Todas na casa dos 20 anos, universitarias, sonhando com o diploma e a carreira de sucesso. Vivendo paixões e nos divertindo assistindo..",
+
+        plataforma: "Netflix, Viki e Prime video",
+    } ,
+
+    {
+        titulo: "A justiceira",
+
+        genero: "Terror, comedia, misterio, crime",
+
+        imagem: "assets-kdrama/a-justiceira.jpg",
+
+        sinopse: "Uma otima esposa e mãe, que ninguém imagina ter uma vida dupla. Ela é uma justiceira que caça criminosos, que a justiça não puni da forma correta. So que seus dias de caçadora podem esta por um fio, pois seu marido parece ja desconfiar que esconde algo.",
+
+        plataforma: "Viki e Kocowa",
+    } ,
+
+    
+    {
+        titulo: "Lutando pelo meu caminho",
+
+        genero: "Drama, comedia, esporte, romance",
+
+        imagem: "assets-kdrama/lutando-pelo-meu-caminho.jpg",
+
+        sinopse: "Um ex-lutador de taekwondo tenta voltar aos ringues após anos afastado. E uma jovem que sonha em trabalhar como âncora no telejornal vai conseguir um trampo onde menos imagina. Com muito esforço e determinação, esses dois e seus amigos conquistaram seus sonhos em meio a muitas cenas hilarias e divertidas.",
+
+        plataforma: "Viki e Netflix",
+    } ,
+
+      {
+        titulo: "100 dias de mentiras",
+
+        genero: "Drama, Terror, historico, romance",
+
+        imagem: "assets-kdrama/100-dias-de-mentiras.jpg",
+
+        sinopse: "Uma famosa batedora de carteiras ganhará a oportunidade de trabalhar para um famoso intérprete coreano, tendo, assim, a possibilidade de largar a vida errada em meio a muitos mistérios e segredos. Gostou de Mr. Sunshine? Vai gostar deste drama!",
+
+        plataforma: "Netflix",
+    } ,
+
+
+        {
+        titulo: "Doutora X e a mafia do jaleco branco",
+
+        genero: "Drama, Terror, medico, misterio",
+
+        imagem: "assets-kdrama/doutora-x-mafia-do-jaleco-branco.jpg",
+
+        sinopse: "Uma funcionária freelancer chega a um hospital onde só existem médicos corruptos, que só querem status e glória. Ela vai ensinar a esses médicos o verdadeiro significado da profissão. Muito famosa, esperta e talentosa, coloca em prática suas habilidades e seus conhecimentos em procedimentos cirúrgicos, salvando seus pacientes e irritando parte dos médicos.",
+
+        plataforma: "Netflix",
+    } ,
 ];
 
 
