@@ -2,7 +2,7 @@ Tecnologias e recursos
 
 HTML5 e CSS3 para estruturar e estilizar a página.
 
-JavaScript, caso utilizado no projeto, para implementar interações.
+JavaScript para implementar interações.
 
 Incorporação de vídeos do YouTube.
 
