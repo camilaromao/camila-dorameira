@@ -397,11 +397,6 @@ button {
     color: #b91c1c;
 }
 
-.japao {
-    background-color: #fdf2f8;
-    color: #be185d;
-}
-
 /* ==================== GRADE DE CARDS ==================== */
 
 .grid-doramaflix {
@@ -447,6 +442,11 @@ button {
     transform: translateY(-8px) scale(1.02);
 
     box-shadow: 0 16px 32px rgba(168, 85, 247, 0.25);
+}
+
+.card-dorama img {
+  width: 100%;
+  border-radius: 2px;
 }
 
 .card-info {
