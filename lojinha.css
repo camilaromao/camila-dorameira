@@ -151,7 +151,7 @@ button {
 .texto-banner {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% - 40px);
     max-width: 650px;
@@ -188,8 +188,8 @@ button {
 
 .achadinhos {
     width: 100%;
-    margin: 55px 0 30px;
-    padding: 0 15px;
+    margin: 8px 0 20px;
+    padding: 0 5px;
 }
 
 .achadinhos-titulo {
@@ -219,17 +219,10 @@ button {
     margin-bottom: 12px;
 }
 
-.achadinhos-titulo h2 {
-    color: #1e293b;
-    margin-bottom: 8px;
-    font-size: clamp(1.3rem, 3vw, 1.8rem);
-}
-
-.achadinhos-titulo > p {
+.achadinhos-titulo > h3 {
     color: #64748b;
-    max-width: 620px;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    max-width: 650px;
+    margin-bottom: 30px;
 }
 
 .achadinhos-grid {
