@@ -4,8 +4,6 @@ HTML5 e CSS3 para estruturar e estilizar a página.
 
 JavaScript para implementar interações e acrescentar produtos na lojinha utilizando o DOM.
 
-Incorporação de vídeos do YouTube.
-
 Links externos para plataformas de streaming e coleções de produtos.
 
 Objetivo
