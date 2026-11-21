@@ -5,9 +5,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: #fdfaff;
+    color: #1e293b;
+}
+
 /* ============================================== */
 /* 2. CABEÇALHO E NAVEGAÇÃO                       */
 /* ============================================== */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -21,45 +27,23 @@ header {
 }
 
 nav {
-    display: flex; /* Ativa o flexbox para alinhar o form */
-    justify-content: center; /* Centraliza o formulário na barra de navegação */
+    display: flex;
+    justify-content: center;
     padding: 8px;
 }
 
 #form-busca {
-    display: flex; /* Ativa o flexbox para alinhar label, input e botão em linha */
+    display: flex;
     align-items: center;
-    gap: 8px; /* Cria o espaçamento de 8px entre os elementos internos */
+    gap: 8px;
 }
 
 button {
-   background-color: rgb(215, 117, 228);
-   color: aliceblue;
-   border-radius: 5px;
-   border: none; /* Remove a borda padrão feia do botão */
-   width: 70px;
-   height: 25px;
-   cursor: pointer; /* Faz o cursor virar a "mãozinha" ao passar o mouse */
-}
-
-@media (max-width: 600px) {
-
-    header {
-        padding: 8px 15px;
-    }
-
-    .logotipo {
-        width: 40px;
-    }
-
-    .redes-sociais {
-        gap: 8px;
-    }
-
-    .redes-sociais img {
-        width: 24px;
-    }
-
+    background-color: rgb(215, 117, 228);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .logotipo {
@@ -89,103 +73,44 @@ button {
     transform: scale(1.15);
 }
 
-/* ====  EFEITO ANIMAÇÕES DE SAKURA ===== */
+/* ==== EFEITO ANIMAÇÕES DE SAKURA ===== */
 #sakura-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Garante que as pétalas não bloqueiem cliques no site */
-  z-index: 9999;
-  overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
 }
 
 .petal {
-  position: absolute;
-  top: -20px;
-  background-color: #ffb7c5; /* Cor rosa-cerejeira */
-  border-radius: 15px 0 15px 0; /* Formato de pétala */
-  opacity: 0.85;
-  pointer-events: none;
-  animation: fall linear forwards;
-}
-
-/* Animação de queda e rotação suave */
-@keyframes fall {
-  0% {
-    transform: translateY(0) rotate(0deg) translateX(0);
-    opacity: 0.9;
-  }
-  50% {
-    transform: translateY(50vh) rotate(180deg) translateX(40px); /* Balanço para o lado */
-  }
-  100% {
-    transform: translateY(105vh) rotate(360deg) translateX(-20px);
-    opacity: 0.1;
-  }
-}
-
-/* =========================================================
-   TEXTO SOBRE O BANNER
-========================================================= */
-
-.texto-banner {
     position: absolute;
-
-    left: 50%;
-    top: 60%;
-
-    transform: translate(-50%, -50%);
-
-    width: calc(100% - 40px);
-    max-width: 650px;
-
-    margin: 0;
-    padding: 0;
-
-    text-align: center;
-
-    color: rgba(255, 255, 255, 0.9);
-
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
-
-    z-index: 2;
+    top: -20px;
+    background-color: #ffb7c5;
+    border-radius: 15px 0 15px 0;
+    opacity: 0.85;
+    pointer-events: none;
+    animation: fall linear forwards;
 }
 
-.texto-banner h1 {
-    margin: 0 0 8px;
-    padding: 0;
-
-    color: rgba(255, 255, 255, 0.9);
-
-    font-size: clamp(1.4rem, 5vw, 2.5rem);
-
-    font-weight: 700;
-
-    line-height: 1.2;
-
-    text-align: center;
-
-    white-space: normal;
-
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg) translateX(0);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg) translateX(40px);
+    }
+    100% {
+        transform: translateY(105vh) rotate(360deg) translateX(-20px);
+        opacity: 0.1;
+    }
 }
 
-.texto-banner p {
-    margin: 0;
-    padding: 0;
-
-    color: rgba(255, 255, 255, 0.78);
-
-    font-size: clamp(0.75rem, 2.5vw, 1rem);
-
-    line-height: 1.5;
-
-    text-align: center;
-}
-
-/* BANNER DO TOPO                              */
+/* ============================================== */
+/* BANNER DO TOPO                                 */
 /* ============================================== */
 
 .banner {
@@ -210,115 +135,68 @@ button {
     object-position: center;
 }
 
-/* Degrade sobre a imagem */ 
 .conteudo-banner::after {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.05),
-        rgba(0, 0, 0, 0.15),
-        rgba(0, 0, 0, 0.55)
+        rgba(0, 0, 0, 0.08),
+        rgba(0, 0, 0, 0.22),
+        rgba(0, 0, 0, 0.62)
     );
     pointer-events: none;
 }
 
-
 .texto-banner {
     position: absolute;
-
     left: 50%;
     top: 60%;
-
     transform: translate(-50%, -50%);
-
     width: calc(100% - 40px);
     max-width: 650px;
-
     margin: 0;
     padding: 0;
-
     text-align: center;
-
+    color: rgba(255, 255, 255, 0.92);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
     z-index: 2;
 }
 
 .texto-banner h1 {
-    margin: 0 0 8px !important;
+    margin: 0 0 8px;
     padding: 0;
-
-    color: rgba(255, 255, 255, 0.90);
-
+    color: rgba(255, 255, 255, 0.95);
     font-size: clamp(1.5rem, 5vw, 2.5rem);
-
     font-weight: 700;
     line-height: 1.2;
-
     text-align: center;
-
     white-space: normal;
-
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .texto-banner p {
     margin: 0;
     padding: 0;
-
-    color: rgba(255, 255, 255, 0.78);
-
-    font-size: clamp(0.75rem, 2.5vw, 1rem);
-
+    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
     line-height: 1.5;
-
     text-align: center;
 }
 
-/* =========================================================
-   BANNER RESPONSIVO
-========================================================= */
+/* ============================================== */
+/* SEÇÕES DE TEXTO E APRESENTAÇÃO                 */
+/* ============================================== */
 
-@media (max-width: 768px) {
-
-    .conteudo-banner {
-        height: 280px;
-    }
-
-}
-
-/* =========================================================
-   CELULAR
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .conteudo-banner {
-        height: 240px;
-    }
-
-    .texto-banner {
-        top: 62%;
-
-        width: calc(100% - 30px);
-    }
-
-    .texto-banner h1 {
-        font-size: 1.45rem;
-    }
-
-    .texto-banner p {
-        font-size: 0.75rem;
-    }
-
-}
-
-/* SEÇÕES DE TEXTO E APRESENTAÇÃO  */ 
-
-.secao-chamativa { 
-    max-width: 900px; 
-    margin: 0 auto; 
+.secao-chamativa {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 40px 20px;
+}
+
+.secao-chamativa h2 {
+    color: #5e3370;
+    margin-bottom: 6px;
 }
 
 .lista-motivos {
@@ -348,7 +226,6 @@ button {
     color: #5e3370;
 }
 
-
 /* ==================== TÍTULO DA PÁGINA ==================== */
 
 .titulo-chamativo {
@@ -362,7 +239,6 @@ button {
     color: #a855f7;
     font-weight: 800;
     letter-spacing: -0.5px;
-
     text-shadow: 0 2px 10px rgba(168, 85, 247, 0.15);
 }
 
@@ -376,12 +252,9 @@ button {
 
 .tag-pais {
     display: inline-block;
-
     padding: 3px 8px;
     margin-bottom: 8px;
-
     border-radius: 12px;
-
     font-size: 0.75rem;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -401,14 +274,10 @@ button {
 
 .grid-doramaflix {
     display: grid;
-    
     grid-template-columns: repeat(3, minmax(0, 1fr));
-
     gap: 20px;
-
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
     padding: 20px;
 }
@@ -416,89 +285,66 @@ button {
 /* ==================== CARDS DE DORAMA ==================== */
 
 .card-dorama {
-
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background: #ffffff;
-
     border-radius: 16px;
-
     overflow: hidden;
-
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-
     cursor: pointer;
-
-    opacity: 1;
-    transform: translateY(0);
-    filter: none;
-    visibility: visible;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-dorama:hover {
     transform: translateY(-8px) scale(1.02);
-
     box-shadow: 0 16px 32px rgba(168, 85, 247, 0.25);
 }
 
 .card-dorama img {
-  width: 100%;
-  border-radius: 2px;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
 }
 
 .card-info {
     padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-info h3 {
     font-size: 1.25rem;
-
     color: #1e293b;
-
     margin: 6px 0;
 }
 
 .genero {
     display: block;
-
     font-size: 0.82rem;
-
     color: #ec4899;
-
     font-weight: 500;
-
     margin-bottom: 10px;
 }
 
 .card-info p {
     font-size: 0.9rem;
-
     color: #4b5563;
-
     line-height: 1.5;
-
     margin-bottom: 12px;
 }
 
-/* ==================== ONDE ASSISTIR ==================== */
-
 .onde-assistir {
     display: inline-block;
-
+    margin-top: auto;
     font-size: 0.88rem !important;
-
     color: #1f2937 !important;
-
     background-color: #f3f4f6;
-
     padding: 8px 12px;
-
     border-radius: 8px;
 }
-
 
 /* ==========================================
    SEÇÃO DOS BUSCADORES
@@ -515,10 +361,8 @@ button {
     color: #a855f7;
     font-weight: 800;
     letter-spacing: -0.5px;
-
     text-shadow: 0 2px 10px rgba(168, 85, 247, 0.15);
 }
-
 
 .buscadores {
     display: flex;
@@ -526,303 +370,274 @@ button {
     justify-content: center;
     gap: 30px;
     width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-
-
-/* ==========================================
-   CADA BUSCADOR
-   ========================================== */
 
 .buscador-titulo {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
     text-align: center;
-
     padding: 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
 }
-
-
-/* ==========================================
-   TÍTULO
-   ========================================== */
 
 .buscador-titulo h2 {
     color: #1e293b;
-
-    margin-bottom: 5px;
-}
-
-
-/* ==========================================
-   NOME DO BUSCADOR
-   ========================================== */
-
-.buscador-titulo p {
-    color: #64748b;
-
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
 }
 
 .buscadores img {
     width: 400px;
+    max-width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 18px;
+    border-radius: 14px;
+    margin-bottom: 14px;
 }
-
-/* ==========================================
-   BOTÃO
-   ========================================== */
 
 .buscador-titulo a {
     display: flex;
-
     align-items: center;
     justify-content: center;
     margin-top: 6px;
-
     gap: 6px;
-
-    background: linear-gradient(
-        135deg,
-        #a855f7,
-        #ec4899
-    );
-
+    background: linear-gradient(135deg, #a855f7, #ec4899);
     color: #ffffff;
-
     font-weight: 600;
-
     font-size: 0.9rem;
-
-    padding: 8px 18px;
-
+    padding: 10px 20px;
     border-radius: 20px;
-
     text-decoration: none;
-
-    box-shadow:
-        0 4px 12px rgba(168, 85, 247, 0.25);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
-/* ==========================================
-   HOVER
-   ========================================== */
 
 .buscador-titulo a:hover {
     transform: translateY(-2px) scale(1.05);
-
-    box-shadow:
-        0 6px 18px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 6px 18px rgba(168, 85, 247, 0.4);
 }
 
-/* ==================== SEÇÃO ACHADINHOS ==================== */
+/* ==================== SEÇÃO ACHADINHOS / LOJINHA ==================== */
 
 .achadinhos {
     width: 100%;
-    margin-top: 50px;
+    margin: 55px 0 30px;
+    padding: 0 15px;
 }
-
-
-/* ==========================================
-   CONTEÚDO
-   ========================================== */
 
 .achadinhos-titulo {
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
-    padding: 20px;
+    padding: 32px 24px;
+    background: linear-gradient(180deg, #faf5ff 0%, #fdf2f8 100%);
+    border: 1px solid #f3e8ff;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(168, 85, 247, 0.08);
 }
 
-
-/* ==========================================
-   TÍTULO
-   ========================================== */
+.selo-lojinha {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #9333ea;
+    border: 1px solid #e9d5ff;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
 
 .achadinhos-titulo h2 {
     color: #1e293b;
-
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
 }
 
-
-/* ==========================================
-   TEXTO
-   ========================================== */
-
-.achadinhos-titulo p {
+.achadinhos-titulo > p {
     color: #64748b;
-
+    max-width: 620px;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-
-/* ==========================================
-   IMAGENS
-   ========================================== */
-
-.achadinhos-imagens {
+.filtros-achadinhos {
     display: flex;
-
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-
-    gap: 20px;
-
-    width: 100%;
-
-    margin-bottom: 25px;
+    gap: 10px;
+    margin-bottom: 24px;
 }
 
-
-.achadinhos-imagens img {
-    width: 220px;
-    height: 280px;
-
-    object-fit: cover;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.12);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.achadinhos-imagens img:hover {
-    transform: translateY(-5px) scale(1.03);
-
-    box-shadow:
-        0 10px 25px rgba(168, 85, 247, 0.25);
-}
-
-
-/* ==========================================
-   BOTÃO
-   ========================================== */
-
-.achadinhos-titulo a {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 6px;
-
-    background: linear-gradient(
-        135deg,
-        #a855f7,
-        #ec4899
-    );
-
-    color: #ffffff;
-
+.filtro-btn {
+    background-color: #f0c2f0;
+    padding: 7px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
     font-weight: 600;
+}
 
+.achadinhos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 260px));
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.item-achadinho {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-achadinho:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.2);
+}
+
+.item-achadinho img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+.item-achadinho-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-item {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #db2777;
+    background-color: #fce7f3;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.item-achadinho-info h3 {
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.item-achadinho-info a,
+.botao-loja-completa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #ffffff;
+    font-weight: 600;
     font-size: 0.9rem;
-
-    padding: 8px 18px;
-
+    padding: 9px 20px;
     border-radius: 20px;
-
     text-decoration: none;
-
-    box-shadow:
-        0 4px 12px rgba(168, 85, 247, 0.25);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.achadinhos-titulo a:hover {
+.item-achadinho-info a:hover,
+.botao-loja-completa:hover {
     transform: translateY(-2px) scale(1.05);
-
-    box-shadow:
-        0 6px 18px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 6px 18px rgba(168, 85, 247, 0.4);
 }
 
+/* =========================================================
+   TABLET & CELULAR
+========================================================= */
 
-/* ==========================================
-   CELULAR
-   ========================================== */
+@media (max-width: 900px) {
+    .grid-doramaflix {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-@media (max-width: 600px) {
+    .buscadores {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 8px 15px;
+    }
+
+    .logotipo {
+        width: 40px;
+    }
+
+    .redes-sociais {
+        gap: 8px;
+    }
+
+    .redes-sociais img {
+        width: 24px;
+    }
+
+    .conteudo-banner {
+        height: 240px;
+    }
+
+    .texto-banner {
+        top: 62%;
+        width: calc(100% - 30px);
+    }
+
+    .texto-banner h1 {
+        font-size: 1.45rem;
+    }
+
+    .texto-banner p {
+        font-size: 0.75rem;
+    }
 
     .grid-doramaflix {
         grid-template-columns: 1fr;
-
         gap: 20px;
-
         padding: 15px;
     }
-
-    .grid-doramaflix {
-        flex-direction: column;
-        align-items: center;
-        display: block;
-    }
-
 
     .card-dorama {
         width: 100%;
     }
 
-
-    .buscadores {
-        flex-direction: column;
-        align-items: center;
-
-    }
-
     .buscadores img {
         width: 100%;
         max-width: 400px;
-        height: 280px;
-        object-fit: cover;
+        height: 260px;
     }
 
-
-    .achadinhos-imagens {
+    .achadinhos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
     }
 
-    .achadinhos-imagens img {
-        width: 145px;
-        height: 190px;
+    .item-achadinho img {
+        height: 185px;
     }
-
-}
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-    .grid-doramaflix {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
 }
 
 /* ============================================== */
